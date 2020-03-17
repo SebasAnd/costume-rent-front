@@ -1,0 +1,10 @@
+.manageinformation{
+    display: flex;
+    
+}
+.p-col{
+    width: 30vw;
+}
+.p-grid{
+    height: 40vw;
+}
