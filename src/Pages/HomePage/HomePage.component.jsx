@@ -2,8 +2,9 @@ import React from 'react';
 import './HomePage.styles.css';
 import { Switch, Route} from 'react-router-dom';
 
-import {ManageInformation} from '../Manage/ManageInformation.component';
-
+import  ManageInformation  from '../Manage/ManageInformation.component';
+import {Inventory} from '../Inventory/Inventory.component';
+ 
 import {Toolbar} from 'primereact/toolbar';
 
 const HomePage = () => (
@@ -18,7 +19,8 @@ const HomePage = () => (
         </Toolbar>
         <div className="general-container">
             <Switch>
-                <Route path='/manage/general' component={ManageInformation}/>
+                <Route path='/manage/general' component={ManageInformation}></Route>
+                <Route path='/manage/inventory' component={Inventory}></Route>
             </Switch>
         </div>
         

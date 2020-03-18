@@ -3,8 +3,20 @@
     
 }
 .p-col{
-    width: 30vw;
+    width: 20vw;
+}
+.p-col_middle{
+    width: 20vw;
 }
 .p-grid{
-    height: 40vw;
+    height: 30vw;
+}
+.panel{
+    height: 15vw;
+}
+.p-panel-title{
+    font-size: 1vw;
+}
+.p-panel-content{
+    height: 10vw;
 }

@@ -1,13 +1,29 @@
 import React from 'react';
 import './ManageInformation.styles.css';
-import "primeflex/primeflex.css"
+import {Panel} from 'primereact/panel';
+import { useHistory } from 'react-router-dom';
 
-export const ManageInformation = () => (
-    <div className="p-grid p-align-center">
-            <div className="p-col">1</div>
-            <div className="p-col">2</div>
-            <div className="p-col">3</div>
-</div>
+import {withRouter} from 'react-router-dom';
+
+/*class ManageInformation extends React.Component{
+    constructor(){
+        super();
+    }*/
     
-)
-export default ManageInformation;
+    const ManageInformation = () => {
+        const history = useHistory();
+        var count = 0;
+            return(
+            <div className="p-grid p-align-center">
+            <div className="p-col"></div>
+            <div className="p-col"><Panel className="panel" header="Clients"></Panel></div>
+            <div className="p-col_middle"></div>
+            <div onClick={() =>{count= count  + 1;console.log(count); history.push(`/manage/inventory`)}} className="p-col"><Panel className="panel" header="Inventory"></Panel></div>
+            <div className="p-col"></div>
+            </div>);
+    };
+    //}
+
+//}
+
+export default  withRouter(ManageInformation);
